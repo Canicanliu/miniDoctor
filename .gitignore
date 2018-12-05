@@ -1,0 +1,8 @@
+/target/
+/.settings/
+.classpath
+.project
+.idea/
+logs/
+cmshop-core.iml
+LOG_HOME_IS_UNDEFINED/
