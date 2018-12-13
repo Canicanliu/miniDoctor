@@ -1,0 +1,47 @@
+<view class="container">
+  <view class='list-hos' bindtap='bindShowMsg'>
+    <text>选择医院:  </text>
+    <text>{{hospital}}</text>
+    <image style='height:20rpx;width:20rpx;' src='/images/down.jpg'></image>
+  </view>
+
+  <view class="select_box" wx:if="{{select}}">
+    <view class="select_one" bindtap="mySelect" data-name="红棉社康">红棉社康</view>
+    <view class="select_one" bindtap="mySelect" data-name="怡锦社康">怡锦社康</view>
+  </view>
+  <view class='line'></view>
+  <view class='infoDate'><text>{{hospital}}近期排班</text></view>
+  <view class="grids">
+    <view class="grid" wx:for="{{routers}}" wx:key="name">
+        <text class="grid__date">{{item.name}}</text>
+        <view class="grid__bg">
+          <text class="grid__sub">{{item.key1}}:{{item.value1}}</text>
+          <text class="grid__sub">{{item.key2}}:{{item.value2}}</text>
+        </view>
+    </view>
+  </view>
+  <view class='sline'></view>
+  <view class='info'>
+    <text class='infoKey'>预约时间：</text>
+    <input class='inputInfo' value='{{selDate}}'></input>
+  </view>
+  <view class='info'>
+    <text class='infoKey'>姓     名:  </text>
+    <input class='inputInfo'></input>
+  </view>
+  <view class='info'>
+    <text class='infoKey'>身份证: </text>
+    <input class='inputInfo'></input>
+  </view>
+  <view class='info'>
+    <text class='infoKey'>手机号:  </text>
+    <input class='inputInfo'></input>
+  </view>
+  <view class='sline'></view>
+  <view class='btn'>
+    <button>确定预约</button>
+  </view>
+ 
+   
+  
+</view>

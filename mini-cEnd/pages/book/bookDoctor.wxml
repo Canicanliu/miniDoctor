@@ -1,0 +1,12 @@
+<view>  
+  <view class='list-msg1' bindtap='bindShowMsg'>
+    <text >选择医院:  </text>
+    <text>{{hospital}}</text>
+    <image style='height:20rpx;width:20rpx;' src='/images/down.jpg'></image>
+  </view>
+
+  <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="红棉社康">红棉社康</view>
+        <view class="select_one" bindtap="mySelect" data-name="其他社康">其他社康</view>        
+  </view>
+</view>

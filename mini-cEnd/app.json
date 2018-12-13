@@ -1,0 +1,16 @@
+{
+  "pages": [
+    
+    "pages/book2/doctorBook",
+    "pages/self/self",
+    "pages/book/bookDoctor",
+    "pages/index/index",
+    "pages/logs/logs"    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
